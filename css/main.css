@@ -1,0 +1,446 @@
+:root {
+  --primary-color: rgb(52, 52, 52);
+}
+section {
+  padding: 80px 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav .navbar-brand {
+  font-family: "Montserrat", sans-serif;
+}
+p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+h6,
+h3{
+  color: var(--primary-color);
+}
+/* navbar */
+nav .nav-item {
+  margin: 0 8px;
+}
+.navbar-nav .nav-link.active span {
+  position: relative;
+}
+.navbar-nav .nav-link.active span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  
+}
+.navbar-nav .nav-link span{
+  position: relative;
+}
+.navbar-nav .nav-link span::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+/* header */
+header {
+  background-image: url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+header .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+header .social li  {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2px;
+  margin: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header h1 .anmi::after{
+  content: "";
+  animation: slider 10s infinite alternate ;
+}
+@keyframes slider {
+  0%{content: "Larry Daniels|";}
+  10%{content: "Larry Daniel|";}
+  11%{content: "Larry Danie|";}
+  12%{content: "Larry Dani|";}
+  13%{content: "Larry Dan|";}
+  14%{content: "Larry Da|";}
+  15%{content: "Larry D|";}
+  16%{content: "Larry |";}
+  17%{content: "Larr|";}
+  18%{content: "Lar|";}
+  19%{content: "La|";}
+  20%{content: "L|";}
+  21%{content: "|";}
+  22%{content: "D|";}
+  23%{content: "De|";}
+  24%{content: "Dev|";}
+  25%{content: "Deve|";}
+  26%{content: "Devel|";}
+  27%{content: "Develo|";}
+  28%{content: "Develop|";}
+  29%{content: "Develope|";}
+  30%{content: "Developer|";}
+  40%{content: "Develope|";}
+  41%{content: "Develop|";}
+  42%{content: "Develo|";}
+  43%{content: "Devel|";}
+  44%{content: "Deve|";}
+  45%{content: "Dev|";}
+  46%{content: "De|";}
+  47%{content: "D|";}
+  48%{content: "|";}
+  49%{content: "D|";}
+  50%{content: "De|";}
+  51%{content: "Des|";}
+  52%{content: "Desi|";}
+  53%{content: "Desig|";}
+  54%{content: "Design|";}
+  55%{content: "Designe|";}
+  56%{content: "Designer|";}
+  66%{content: "Designe|";}
+  76%{content: "Design|";}
+  77%{content: "Desig|";}
+  78%{content: "Desi|";}
+  79%{content: "Des|";}
+  80%{content: "De|";}
+  81%{content: "D|";}
+  82%{content: "|";}
+  83%{content: "L|";}
+  84%{content: "La|";}
+  85%{content: "Lar|";}
+  86%{content: "Larr|";}
+  87%{content: "Larry|";}
+  88%{content: "Larry D|";}
+  89%{content: "Larry Da|";}
+  90%{content: "Larry Dan|";}
+  91%{content: "Larry Dani|";}
+  92%{content: "Larry Danil|";}
+  93%{content: "Larry Danile|";}
+  94%{content: "Larry Daniles|";}
+}
+/* section1 */
+#about .img {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+#about .img::after {
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -30px;
+  left: -22px;
+  z-index: -1;
+}
+#about .title {
+  color: #999;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+#about .progress{
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#about .download,
+#about .contact {
+  all: unset;
+  margin-top: 30px;
+  display: inline-block;
+  border: 1px solid #1c1c1c;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+}
+#about .contact:hover {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+#about .download {
+  background-color: #1c1c1c;
+  color: #eee;
+}
+#about .download:hover {
+  color: black;
+  background-color: white;
+}
+/* section2 */
+#services h3 {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+#services h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+#services h6 {
+  color: var(--primary-color);
+}
+#services .services-text {
+box-shadow: 0 0.5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+}
+#services .services-text i {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+#services .services-text:hover i {
+  background-color: black !important;
+  color: white;
+}
+
+/* section3 */
+#works h3 {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+#works h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+.nav-pills .nav-link {
+  color: black;
+}
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active span {
+  color: black;
+  background-color: transparent;
+  position: relative;
+}
+.nav-pills .nav-link.active span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left:0;
+  height: 2px;
+  bottom: -5px;
+  background-color: black;
+  
+}
+.nav-pills .nav-link span {
+  position: relative;
+}
+.nav-pills .nav-link span::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0px;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+#works .layer i {
+  padding: 7px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+}
+#works .layer .works-text {
+  top: 150%;
+  transition: top 0.5s;
+}
+#works .layer:hover .works-text {
+  top: 50%;
+}
+#works .layer {
+  transition: all 0.5s;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+}
+#works .layer:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+#clients h3 {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+#clients h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+#clients img {
+  width: 100px;
+  height: 100px;
+}
+#clients .envanto {
+  font-size: 12px;
+}
+#clients .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #999;
+}
+/* section6 */
+#team h3 {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+#team h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+#team .layer {
+  top: 5px;
+  bottom: 5px;
+  left: 5px;
+  right: 5px;
+  transition: all 0.5s;
+}
+#team .img:hover .layer {
+  background-color: rgba(255, 255, 255, 0.95);
+  transform: rotateY(180deg);
+}
+#team img {
+  transition: transform 0.5s;
+}
+#team .img:hover img {
+  transform: scale(1.2);
+}
+#team .layer li i {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+#team .img:hover li i {
+  opacity: 1;
+  transform: rotateY(180deg);
+}
+#team .layer li i:hover {
+  background-color: white !important;
+  border: 1px solid black !important;
+  color: black !important;
+}
+/* section7 */
+#contact h3 {
+  position: relative;
+  z-index: 4;
+  display: inline-block;
+}
+#contact h3::after {
+  content: "";
+  width: 100%;
+  height: 30px;
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  z-index: -1;
+}
+#contact .contact-text i {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+#contact .contact-text i:hover {
+  background-color: black !important;
+  color: white;
+}
+#contact input,
+#contact textarea {
+  background: #f4f4f4;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+#contact .click a {
+  all: unset;
+  background-color: #1c1c1c;
+  color: #eee;
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+}
+#contact .click a:hover {
+  background: #eee;
+  color: #1c1c1c;
+  border: 1px solid black;
+}
+/* footer */
+footer {
+  background-color: #1c1c1c;
+}
+footer p {
+  font-size: 13px;
+  line-height: 20.8px;
+  word-spacing: 2px;
+}
